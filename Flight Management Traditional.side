@@ -1,0 +1,335 @@
+{
+  "id": "22da8996-005d-4423-8975-5a190c488204",
+  "version": "2.0",
+  "name": "Flight Management Traditional",
+  "url": "https://lab-03254-bos.lab-internal.pega.com/prweb/app/FlightManagementSolTest",
+  "tests": [{
+    "id": "38e861d1-88f3-496e-a73d-fa8129583219",
+    "name": "Booking Cancellation - User",
+    "commands": [{
+      "id": "c96b5043-22a6-4aa4-8ab4-c7126e6edd69",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "1000",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "a85afba3-ea05-4ca1-b87f-37e057263859",
+      "comment": "",
+      "command": "open",
+      "target": "https://lab-03254-bos.lab-internal.pega.com/prweb/app/FlightManagementSolTest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b4b7b1c-3787-4764-a8ea-172246ab8a3a",
+      "comment": "",
+      "command": "//setWindowSize",
+      "target": "1168x452",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "312c2f01-9dfa-40be-b77c-d7bf6a8bd13f",
+      "comment": "",
+      "command": "//type",
+      "target": "id=txtUserID",
+      "targets": [],
+      "value": "AUTUser@flightmgmt.com"
+    }, {
+      "id": "caf2056a-c070-4bfb-bc94-b6039dbcec4d",
+      "comment": "",
+      "command": "//type",
+      "target": "id=txtPassword",
+      "targets": [],
+      "value": "Devops2025!"
+    }, {
+      "id": "adc2cdb8-9340-48b8-808f-c2eec7e4c96b",
+      "comment": "",
+      "command": "//click",
+      "target": "id=sub",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89f8f388-9575-4a5c-bd39-0018f259e095",
+      "comment": "Create",
+      "command": "click",
+      "target": "xpath=//span[@class = 'menu-item-icon-imageclass pi pi-plus']",
+      "targets": [
+        ["css=.menu-item-image-wrapper:nth-child(1) > .pi-plus", "css:finder"],
+        ["xpath=//li[@id='menu-item-$PpyNavigation1733227363532$ppyElements$l1']/a/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0e9ec32-912c-4488-bb8f-1f28831b1747",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[(text() = 'BookingCancellationDemo' or . = 'BookingCancellationDemo')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd593d1c-cf62-4030-ba3d-46a755f61393",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[(text() = 'BookingCancellationDemo' or . = 'BookingCancellationDemo')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9acb148-555d-4447-a5b6-85a0797e80df",
+      "comment": "wait Continue BTN",
+      "command": "waitForElementPresent",
+      "target": "xpath=//*[@data-test-id='20161017110917023176385']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "19ac4b9e-512c-4539-9434-ecdf629177f9",
+      "comment": "PNR",
+      "command": "type",
+      "target": "id=b2e1c8e5",
+      "targets": [
+        ["id=b2e1c8e5", "id"],
+        ["name=$PpyWorkPage$pSelectBooking$pPnr", "name"],
+        ["css=#b2e1c8e5", "css:finder"],
+        ["xpath=//input[@id='b2e1c8e5']", "xpath:attributes"],
+        ["xpath=(//div[@id='RULE_KEY']/div/div/div/div/input)[16]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "UP4231"
+    }, {
+      "id": "009454d0-9b53-44e5-9260-c093c720fd7a",
+      "comment": "Continue BTN",
+      "command": "click",
+      "target": "xpath=//*[@data-test-id='20161017110917023176385']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33cb74ff-a846-41ae-b210-c2d97c277afe",
+      "comment": "wait Continue BTN",
+      "command": "waitForElementPresent",
+      "target": "xpath=//*[@data-test-id='20161017110917023176385']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "dd29a647-c41a-48b8-91cd-9d0e0beb6da0",
+      "comment": "",
+      "command": "type",
+      "target": "id=d92e7a0a",
+      "targets": [
+        ["id=d92e7a0a", "id"],
+        ["name=$PpyWorkPage$pRefunderEmail", "name"],
+        ["css=#d92e7a0a", "css:finder"],
+        ["xpath=//input[@id='d92e7a0a']", "xpath:attributes"],
+        ["xpath=//div[@id='RULE_KEY']/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "roberto.bertaccini@pega.com"
+    }, {
+      "id": "b54986ce-012c-4b88-ab76-554185edd2a6",
+      "comment": "Create BTN",
+      "command": "click",
+      "target": "xpath=//*[@data-test-id='20161017110917023277518']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a9fd7f57-f2a8-483b-8154-69258596c7d5",
+    "name": "Booking Cancellation - Approver",
+    "commands": [{
+      "id": "74ec92ea-4e69-443a-a227-bb92ccb89a22",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "",
+      "targets": [],
+      "value": "1000"
+    }, {
+      "id": "03eb5060-50e6-4aab-a4b4-246f7df05d04",
+      "comment": "",
+      "command": "open",
+      "target": "https://lab-03254-bos.lab-internal.pega.com/prweb/app/FlightManagementSolTest/beEBp4uRVTogorRwSwWqbOtn9IL2fwdI*/!STANDARD",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "599839e5-b757-4c53-9241-2995eba32596",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1168x452",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc81e6b4-ba94-4cff-ab8f-bba00b298842",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUserID",
+      "targets": [
+        ["id=txtUserID", "id"],
+        ["name=UserIdentifier", "name"],
+        ["css=#txtUserID", "css:finder"],
+        ["xpath=//input[@id='txtUserID']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "AUTUser@flightmgmt.com"
+    }, {
+      "id": "f491251e-407d-40e5-ba21-e565453d16fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=Password", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Porco2024!"
+    }, {
+      "id": "281538cf-3f20-4681-a9dc-6c680e1bb5a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUserID",
+      "targets": [
+        ["id=txtUserID", "id"],
+        ["name=UserIdentifier", "name"],
+        ["css=#txtUserID", "css:finder"],
+        ["xpath=//input[@id='txtUserID']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "SampleApprover@flightmgmt.com"
+    }, {
+      "id": "54df4148-a0de-4c23-bd7a-952f55f1ca61",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=Password", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b9c9003-30a4-41a7-8e93-e8303b63e0b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=Password", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bef14e99-e776-4c55-831c-aa251cdc8233",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=Password", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b43589c-1adf-4936-8bb4-4df81c3ff51e",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=Password", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6111026d-0bca-4d45-a3c2-db11d7ed23df",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=Password", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb5ef843-002b-4077-ba8c-bd6905cb1780",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=Password", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Diarrea2023!"
+    }, {
+      "id": "7bcddacb-cd4c-4555-a579-c8877706b1e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sub > .loginButtonText",
+      "targets": [
+        ["css=#sub > .loginButtonText", "css:finder"],
+        ["xpath=//button[@id='sub']/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03c4effe-5503-46d4-8ab6-1595ab58e2dc",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUserID",
+      "targets": [
+        ["id=txtUserID", "id"],
+        ["name=UserIdentifier", "name"],
+        ["css=#txtUserID", "css:finder"],
+        ["xpath=//input[@id='txtUserID']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "AUTUser@flightmgmt.com"
+    }, {
+      "id": "a714d3a7-bf50-431d-a87b-6e5adbf3bfb3",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=Password", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Porco2024!"
+    }]
+  }],
+  "suites": [{
+    "id": "8e2aa746-454f-40ae-8d80-c2628ade8302",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["38e861d1-88f3-496e-a73d-fa8129583219"]
+  }],
+  "urls": ["https://lab-03254-bos.lab-internal.pega.com/prweb/app/FlightManagementSolTest"],
+  "plugins": []
+}
