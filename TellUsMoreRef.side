@@ -1,0 +1,233 @@
+{
+  "id": "3af2a9a8-7e49-4f32-bf61-2a13b4713655",
+  "version": "2.0",
+  "name": "TellUsMoreRef",
+  "url": "https://lab-03254-bos.lab-internal.pega.com",
+  "tests": [{
+    "id": "f911e5d3-e931-42e5-9151-50a2e6394728",
+    "name": "Incident",
+    "commands": [{
+      "id": "37efb622-7c5b-45a6-8dcb-d313c26c922d",
+      "comment": "",
+      "command": "open",
+      "target": "https://lab-03254-bos.lab-internal.pega.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c0c9d7a-d35e-4560-a844-493ddfc555ec",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbf13f05-6870-432f-9546-cae04a5682cf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1275x717",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8da76fa2-d459-4718-b1bf-254cd9809573",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUserID",
+      "targets": [
+        ["id=txtUserID", "id"],
+        ["name=UserIdentifier", "name"],
+        ["css=#txtUserID", "css:finder"],
+        ["xpath=//input[@id='txtUserID']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "AUTCustomer@tellusmoreref"
+    }, {
+      "id": "8cf1bc50-6fad-4d7a-8e09-2fec62e5be89",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPassword",
+      "targets": [
+        ["id=txtPassword", "id"],
+        ["name=Password", "name"],
+        ["css=#txtPassword", "css:finder"],
+        ["xpath=//input[@id='txtPassword']", "xpath:attributes"],
+        ["xpath=//div[@id='credentialsForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Devops2025!"
+    }, {
+      "id": "5361689a-392b-4521-8585-e0531f8f7a10",
+      "comment": "",
+      "command": "click",
+      "target": "id=sub",
+      "targets": [
+        ["id=sub", "id"],
+        ["name=pyActivity=Code-Security.Login", "name"],
+        ["css=#sub", "css:finder"],
+        ["xpath=//button[@id='sub']", "xpath:attributes"],
+        ["xpath=//div[@id='submit_row']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8c9a904-6706-4112-a6f2-353577ae9cd8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Incident')]",
+      "targets": [
+        ["css=li:nth-child(1) > .sc-bqWxrE", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='root-container']/div/main/div/div/div[2]/div/article/div/ul/li/button", "xpath:idRelative"],
+        ["xpath=//li/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Incident')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e8e52df-3d7c-495f-99bd-0f4b19526efa",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//*[@data-testid='IncidentType:select:control']",
+      "targets": [],
+      "value": "label=Product faulty or unsafe"
+    }, {
+      "id": "b828b67a-ed2d-4efe-b796-49105ac81282",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//*[@data-testid='IncidentSubType:select:control']",
+      "targets": [],
+      "value": "label=Product not as described"
+    }, {
+      "id": "d9b1d0b8-6b8d-4556-ad82-b19acdea3101",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@name='next']",
+      "targets": [
+        ["css=div:nth-child(6) .sc-fLcnxK .sc-bqWxrE:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@name='next'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/div/article/footer/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efd51000-9750-4163-ab19-fc68a8aced52",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//*[@data-testid='Search by::select:control']",
+      "targets": [],
+      "value": "label=Category"
+    }, {
+      "id": "8ab336cc-328f-45ce-bba1-08fdf44fa3af",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@data-testid='Cost:currency-input:control']",
+      "targets": [
+        ["id=_xpx6r3g8k", "id"],
+        ["css=#\\_xpx6r3g8k", "css:finder"],
+        ["xpath=//input[@id='_xpx6r3g8k']", "xpath:attributes"],
+        ["xpath=//div[@id='_xpx6r3g8k-field']/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/input", "xpath:position"]
+      ],
+      "value": "$100"
+    }, {
+      "id": "6d916f09-cefc-4a52-81a2-217e62b63f29",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@name='next']",
+      "targets": [
+        ["css=div:nth-child(6) .sc-fLcnxK .sc-bqWxrE:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@name='next'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/div/article/footer/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8260da9d-d6ea-4ee2-bffd-a9fe30a11ae2",
+      "comment": "",
+      "command": "click",
+      "target": "//span[text()='Fill form with AI']/ancestor::button",
+      "targets": [
+        ["css=div:nth-child(6) .sc-fLcnxK .sc-bqWxrE:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@name='next'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/div/article/footer/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b59c531-b49f-4155-a6b8-c42579a4629e",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "10000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "366b241a-1c30-42ab-a669-45a15f12495c",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@name='next']",
+      "targets": [
+        ["css=div:nth-child(6) .sc-fLcnxK .sc-bqWxrE:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@name='next'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/div/article/footer/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ecf0a42-33d8-424a-a589-cdf1f5a196c0",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//*[@data-testid='What would you like Sweet Life Inc  to do to resolve your issue?:select:control']",
+      "targets": [],
+      "value": "label=Refund"
+    }, {
+      "id": "f02bb56d-52db-4379-a712-76ef448ef985",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@name='next']",
+      "targets": [
+        ["css=div:nth-child(6) .sc-fLcnxK .sc-bqWxrE:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@name='next'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/div/article/footer/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "614fdba0-5941-46dd-8c5f-7c47c1593ee2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@data-testid='UserConsent']/following-sibling::label/div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3634a8ae-f737-43f6-af93-f1b705ef82a8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@data-testid='PrivacyPolicy']/following-sibling::label/div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdc8d852-418b-4a16-a846-94c6e89f706e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@name='submit']",
+      "targets": [
+        ["css=div:nth-child(6) .sc-fLcnxK .sc-bqWxrE:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@name='next'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/div/article/footer/div/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa174644-f59e-43d2-a596-d0d48dd8aa31",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2d538bdd-eba0-4e02-a793-44e07f3ac7d6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f911e5d3-e931-42e5-9151-50a2e6394728"]
+  }],
+  "urls": ["https://lab-03254-bos.lab-internal.pega.com/"],
+  "plugins": []
+}
